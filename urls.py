@@ -10,7 +10,7 @@ urlpatterns = patterns(
     (r'^$', 'django.views.generic.list_detail.object_list', info_dict),
 )
 
-urlpatterns += patterns('plainscraft.courses.views',
+urlpatterns += patterns('coursecal.views',
     (r'^calendar/$', 'event_calendar'),
     (r'^detail/(?P<slug_id>[0-9A-Za-z-]+)/$', 'course_by_slug'),
 )
